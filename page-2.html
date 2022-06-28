@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 1</title>
+<style>
+    /*header*/
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif ;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        max-width: 1200px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    header {
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        padding: 15;
+        align-items: center;
+        
+    }
+    header a {
+        color: white;
+        text-decoration: none;
+    }
+    ul {
+        display: flex;
+    }
+
+    li {
+        width: 80px;
+        text-align: center;
+        list-style: none;
+    }
+    img {
+        width: 98%;
+    }
+
+    nav{
+        margin-top: 30px;
+    }
+    img.logo  {
+        max-width: 100px;
+        height: 65px;
+        margin-top: 4px;
+    }
+    /*header*/
+
+    .grid {
+        margin: 30px auto;
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        gap:20px 
+        
+    }
+    .grid > div{
+        width: 100%;
+        min-height: 325px;
+    }
+    .grid p{
+        margin-top: 15px;
+        text-align: center;
+    }
+    .load-box {
+        background-color: #C4C4C4;
+        width: 100%;
+        min-height: 300px;
+    }
+    
+
+</style>
+</head>   
+<body>
+    <header>
+        <div class="container">
+            <div>
+                <img class="logo" width="100" src="./borboleta.jpg" alt="borboleta">
+            </div>
+            <nav>  
+                <ul>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>   
+        </div>   
+    </header>
+    <div class="grid">
+        <div class="box">
+            <div class="load-box"></div>
+            <p>AlgumTexto</p>
+        </div>
+        <div class="box">
+            <div class="load-box"></div>
+            <p>AlgumTexto</p>
+        </div>
+        <div class="box">
+            <div class="load-box"></div>
+            <p>AlgumTexto</p>
+        </div>
+        <div class="box">
+            <div class="load-box"></div>
+            <p>AlgumTexto</p>
+        </div>
+        <div class="box">
+            <div class="load-box"></div>
+            <p>AlgumTexto</p>
+        </div>
+        <div class="box">
+            <div class="load-box"></div>
+            <p>AlgumTexto</p>
+        </div>
+    </div>
+</body> 
+</html>
